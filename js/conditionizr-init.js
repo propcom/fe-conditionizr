@@ -105,7 +105,7 @@ conditionizr.add('mac', function () {
 
 
 conditionizr.config({
-    assets: '/assets/js/conditionizr/',
+    assets: '/assets/submodules/conditionizr/',
     tests: {
         'windows': ['class'],
         'mac': ['class'],
@@ -122,12 +122,12 @@ conditionizr.config({
 });
 
 
-conditionizr.load('/assets/js/conditionizr/ie/warning.js', ['ie6', 'ie7']);
+conditionizr.load('/assets/submodules/conditionizr/js/conditionizr/ie/warning.js', ['ie6', 'ie7']);
 conditionizr.on('ie7', function () {
 
     window.onload = function() {
         legacyIEwarning(function() {
-            return {imgPath: "/assets/js/conditionizr/ie/i" /*specifies the path to each of the browser icons*/};
+            return {imgPath: "/assets/submodules/conditionizr/js/conditionizr/ie/i" /*specifies the path to each of the browser icons*/};
         });
     };
 
@@ -137,7 +137,7 @@ conditionizr.on('ie6', function () {
 
     window.onload = function() {
         legacyIEwarning(function() {
-            return {imgPath: "/assets/js/conditionizr/ie/i" /*specifies the path to each of the browser icons*/};
+            return {imgPath: "/assets/submodules/conditionizr/js/conditionizr/ie/i" /*specifies the path to each of the browser icons*/};
         });
     };
 
